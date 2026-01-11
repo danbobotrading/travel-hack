@@ -20,8 +20,8 @@ function Initialize-TelegramBot {
     try {
         Write-Host "Initializing Telegram Bot..." -ForegroundColor Yellow
         
-        # Import config manager
-        Import-Module "$PSScriptRoot\config-manager.psm1" -Force -ErrorAction Stop
+        # Import config manager using dot sourcing
+        . "$PSScriptRoot\config-manager.psm1"
         
         # Load configuration
         $config = Get-Configuration
@@ -270,7 +270,7 @@ function Process-FlightQuery {
         Write-Host "🔍 Processing query: $Query" -ForegroundColor Yellow
         
         # Import NLP module
-        Import-Module "$PSScriptRoot\nlp-processor.psm1" -Force -ErrorAction Stop
+        . "$PSScriptRoot\nlp-processor.psm1"
         
         # Parse the query
         $flightParams = Parse-FlightQuery -Query $Query

@@ -1,0 +1,11 @@
+﻿{
+    "TelegramBotToken": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+    "TravelPayoutsAPIKey": "YOUR_TRAVELPAYOUTS_API_KEY_HERE",
+    "AffiliateMarker": "694136",
+    "DefaultCurrency": "USD",
+    "LogLevel": "INFO",
+    "MaxResults": 10,
+    "CacheTTL": 3600,
+    "AllowedChatIds": [],
+    "AdminChatIds": []
+}

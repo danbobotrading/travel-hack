@@ -1,0 +1,42 @@
+﻿# Secrets and sensitive data
+config/config.json
+*.env
+*.secret
+
+# Logs
+logs/
+*.log
+
+# PowerShell
+*.ps1xml
+*.pssc
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Cache files
+__pycache__/
+.cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Database files
+*.db
+*.sqlite
